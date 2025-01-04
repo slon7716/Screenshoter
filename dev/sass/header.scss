@@ -1,8 +1,34 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #e0aaaa;
-	a {
-		color: #fff;
+@use 'sass/variables' as *;
+
+header {
+	height: 100px;
+	margin-top: 50px;
+
+	.container {
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+
+		.logo {
+			width: 250px;
+			height: 39px;
+		}
+
+		.header-nav {
+			padding-top: 9px;
+			display: flex;
+
+			.nav-list {
+				display: flex;
+				gap: 60px;
+
+				.nav-item {
+					font-size: 1rem;
+					font-weight: 500;
+					line-height: 1.5;
+					color: $dark-color;
+				}
+			}
+		}
 	}
 }

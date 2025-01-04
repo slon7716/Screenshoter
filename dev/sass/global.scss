@@ -1,4 +1,75 @@
+@use 'sass/variables' as *;
+
 html {
-   font-size: 16px; /* 1rem = 16px */
    box-sizing: border-box;
+   font-size: 16px; // 1rem = 16px
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+body {
+   min-height: 100vh;
+   font-family: $font-primary;
+   color: $basic-color;
+   background-color: #fff;
+   overflow-x: hidden;
+}
+
+a {
+   text-decoration: none; /* Убирает подчеркивание */
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit; // Наследовать шрифт от body
+  color: inherit; // Наследовать цвет от body
+}
+
+h1 {
+   font-size: 3rem;
+   font-weight: 600;
+   line-height: normal;
+}
+
+h2 {
+   font-size: 2.25rem;
+   font-weight: 600;
+   line-height: normal;
+}
+
+h3 {
+   font-size: 1.5rem;
+   font-weight: 500;
+   line-height: normal;
+}
+
+h4 {
+   font-size: 1.25rem;
+   font-weight: 500;
+   line-height: 1.6;
+}
+
+.text {
+   font-size: 1.125rem;
+   font-weight: 400;
+   line-height: 2;
+}
+
+.small-text {
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 2;
+}
+
+.container {
+   width: 100%;
+   max-width: 1440px;
+   padding: 0 10px;
+   margin: 0 auto;
 }

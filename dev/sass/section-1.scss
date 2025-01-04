@@ -1,0 +1,38 @@
+@use 'sass/variables' as *;
+
+
+.section-1 {
+
+   .info-about-site {
+      max-width: 454px;
+      margin-left: 240px;
+      position: relative;
+
+      h1 {
+         margin-bottom: 40px;
+      }
+   
+      img {
+         position: absolute;
+         top: 118px;
+         left: -8px;
+      }
+
+      .text {
+         height: 83px;
+         color: $secondary-color;
+         margin-bottom: 80px;
+      }
+
+      button {
+         font-size: 1rem;
+         font-weight: 500;
+         line-height: 1.5;
+         background: $gradient;
+         color: #fff;
+         border-radius: 5px;
+         border: none;
+         padding: 22px 15px;
+      }
+   }
+}
