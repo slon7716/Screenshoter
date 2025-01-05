@@ -2,21 +2,36 @@
 
 
 .section-1 {
+   width: 100%;
+   max-width: 1920px;
+   border: 1px dashed;
+   display: flex;
+   justify-content: space-between;
+   overflow: hidden;
+   margin: 0 auto;
 
    .info-about-site {
       max-width: 454px;
       margin-left: 240px;
-      position: relative;
-
+      
+      .white {
+         width: 170px;
+         height: 170px;
+         filter: blur(6px);
+         margin-left: -283px;
+      }
+      
       h1 {
+         position: relative;
          margin-bottom: 40px;
+
+         img {
+            position: absolute;
+            top: 112px;
+            left: -8px;
+         }
       }
    
-      img {
-         position: absolute;
-         top: 118px;
-         left: -8px;
-      }
 
       .text {
          height: 83px;
@@ -28,11 +43,55 @@
          font-size: 1rem;
          font-weight: 500;
          line-height: 1.5;
-         background: $gradient;
+         background: $gradient1;
          color: #fff;
          border-radius: 5px;
          border: none;
-         padding: 22px 15px;
+         padding: 23px 15px;
+         margin-bottom: 126px;
       }
+
+      .arrow-down {
+         display: block;
+      }
+   }
+
+   .gradient-block {
+      width: 800px;
+      height: 740px;
+      background: $gradient2;
+      border-radius: 70px;
+      margin-top: auto;
+      margin-right: -98px;
+
+      .screen {
+         width: 848px;
+         height: 477px;
+         margin-top: 88px;
+         margin-left: -243px;
+         position: relative;
+         z-index: 1;
+      }
+
+      .opaque-glass {
+         width: 282px;
+         height: 108px;
+         font-size: 1rem;
+         line-height: 1.6;
+         color: #fff;
+         background-color: #C4C4C41A;
+         backdrop-filter: blur(20px);
+         border: 1px solid #FFFFFF26;
+         border-radius: 10px;
+         padding: 28px 49px;
+         margin-top: -30px;
+         margin-left: 124px;
+         position: relative;
+         z-index: 1;
+      }
+   }
+
+   .line {
+      position: absolute;
    }
 }
