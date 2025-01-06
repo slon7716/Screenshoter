@@ -69,9 +69,16 @@ h4 {
    line-height: 2;
 }
 
+img,
+.icon-svg {
+  width: 100%;
+  height: auto;
+}
+
 .container {
    width: 100%;
    max-width: 1440px;
    padding: 0 10px;
    margin: 0 auto;
 }
+
