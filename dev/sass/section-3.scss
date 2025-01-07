@@ -1,10 +1,9 @@
 @use 'sass/variables' as *;
 
 .section-3 {
-   width: 100%;
-   max-width: 1920px;
-   margin: 0 auto;
-   overflow: hidden;
+   .container {
+      overflow: hidden;
+   }
 
    .decorative-line-2 {
       max-width: 1920px;
@@ -40,53 +39,17 @@
          z-index: 1;
 
          .gif {
-            width: 705px;
-            height: 397px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.13);
-            padding: 184px 303px;
             margin-left: 310px;
-            
-            .gif-small {
-               font-size: 1.5rem;
-               font-weight: 700;
-               line-height: 1.17;
-               color: $primary-color;
-            }
-
-            .gif-big {
-               font-size: 3rem;
-               line-height: 1.19;
-               color: $primary-color;
-               opacity: 12%;
-               margin-top: -59px;
-               margin-left: 20px;
-            }
+            @include gif;
          }
       }
    }
 
-   .right-part {
+   .info-about {
       width: 460px;
       height: 272px;
       margin-top: 437px;
       margin-left: 275px;
-
-      h2 {
-         margin-bottom: 40px;
-      }
-
-      .text {
-         line-height: 1.8;
-
-         .custom-spacing {
-            height: 27px;
-         }
-
-         span {
-            color: $primary-color;
-         }
-      }
+      @include info-about;
    }
 }

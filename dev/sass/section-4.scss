@@ -1,0 +1,48 @@
+@use 'sass/variables' as *;
+
+.section-4 {
+   height: 920px;
+   margin-top: -182px;
+
+   .container {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   .info-about {
+      width: 434px;
+      height: 303px;
+      margin-top: 379px;
+      margin-right: 152px;
+      @include info-about;
+   }
+
+   .right-part {
+      position: relative;
+
+      .gif {
+         margin-right: 240px;
+         margin-top: 332px;
+         position: relative;
+         z-index: 1;
+         @include gif;
+      }
+
+      .cube-purple {
+         width: 181px;
+         height: 179px;
+         position: absolute;
+         top: -90px;
+         right: 10px;
+      }
+
+      .ellipse {
+         width: 777px;
+         height: 920px;
+         backdrop-filter: blur(10px);
+         position: absolute;
+         top: 0;
+         left: 168px;
+      }
+   }
+}

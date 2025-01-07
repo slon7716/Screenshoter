@@ -1,10 +1,13 @@
 @use 'sass/variables' as *;
 
 .section-2 {
-   margin: 288px auto 19px;
+   margin: 288px 0 19px 0;
+
+   .container {
+      max-width: 1441px;
+   }
 
    .info {
-      width: 100%;
       display: flex;
       gap: 139px;
       margin-bottom: 80px;
@@ -28,8 +31,9 @@
    }
 
    .plates {
+      width: 100%;
       display: flex;
-      gap: 30px;
+      justify-content: space-between;
 
       .plate {
          width: 338px;
