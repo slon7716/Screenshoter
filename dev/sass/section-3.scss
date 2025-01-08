@@ -17,32 +17,7 @@
    }
 
    .left-part {
-      img {
-         width: 246px;
-         height: 246px;
-         margin-top: 113px;
-         position: relative;
-         z-index: 1;
-      }
-
-      .block-blur {
-         width: 903px;
-         height: 650px;
-         background: $gradient3;
-         border-radius: 70px;
-         backdrop-filter: blur(15px); // Размытие фона
-         box-shadow: inset 0 0 0 3px #ffffff1f; // внутренний border
-         padding-top: 130px;
-         margin-left: -80px;
-         margin-top: -104px;
-         position: relative;
-         z-index: 1;
-
-         .gif {
-            margin-left: 310px;
-            @include gif;
-         }
-      }
+      @include left-part;
    }
 
    .info-about {

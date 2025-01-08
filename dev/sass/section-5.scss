@@ -1,1 +1,82 @@
 @use 'sass/variables' as *;
+
+.section-5 {
+   margin-top: -213px;
+
+   .container {
+      display: flex;
+      gap: 54px;
+   }
+
+   .left-part {
+      position: relative;
+      @include left-part;
+
+      img {
+         width: 202px;
+         height: 299px;
+         margin-top: 0;
+      }
+
+      .small-gif {
+         width: 98px;
+         height: 59px;
+         padding-top: 31px;
+         position: absolute;
+         left: 150px;
+         top: 24px;
+         z-index: 1;
+
+         .gif-small {
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.17;
+            color: $primary-color;
+         }
+      
+         .gif-big {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.19;
+            color: $primary-color;
+            opacity: 0.16;
+            margin-top: -59px;
+            margin-left: 20px;
+         }
+      }
+
+      .block-blur {
+         width: 1042px;
+         height: 811px;
+         padding-top: 163px;
+         margin-left: 0px;
+         margin-top: -140px;
+
+         .gif {
+            margin-left: 240px;
+         }
+      }
+
+      .opague-glass {
+         width: 461px;
+         height: 168px;
+         padding: 30px 52px 30px 40px;
+         @include opaque-glass;
+         color: $secondary-color;
+         position: absolute;
+         bottom: 120px;
+         left: 362px;
+
+         span {
+            color: $basic-color;
+         }
+      }
+   }
+
+   .info-about {
+      width: 462px;
+      height: 208px;
+      margin-top: 417px;
+      @include info-about;
+   }
+}
