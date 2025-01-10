@@ -32,32 +32,19 @@
    }
 
    .plates {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 19px;
-
+      @include plates;
       .plate {
-         width: 338px;
-         height: 294px;
-         background-color: #fff;
-         border-radius: 10px;
-         box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.13);
-         padding: 50px 60px 60px;
-
-         img {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 40px;
-         }
-
          &:hover {
-            color: #fff;
-            background-color: $primary-color;
-            cursor: url(assets/img/cursor.svg), auto;
-
             .cursor {
                content: url(assets/img/cursor-light.svg);
+            }
+
+            .save {
+               content: url(assets/img/save-light.svg);
+            }
+
+            .puzzle {
+               content: url(assets/img/puzzle-dark.svg);
             }
 
             .heart {

@@ -1,0 +1,53 @@
+@use 'sass/variables' as *;
+
+.section-7 {
+   height: 480px;
+   margin-top: 65px;
+
+   .container {
+      width: 1441px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .plates {
+      margin-bottom: 90px;
+
+      @include plates;
+      .plate {
+         height: 320px;
+         padding: 60px 45px;
+
+         &:hover {
+            .crayon {
+               content: url(assets/img/crayon-light.svg);
+            }
+
+            .fullscreen {
+               content: url(assets/img/fullscreen-dark.svg);
+            }
+
+            .chat {
+               content: url(assets/img/chat-dark.svg);
+            }
+
+            .raindrop {
+               content: url(assets/img/raindrop-dark.svg);
+            }
+         }
+      }
+   }
+
+   button {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #fff;
+      background-color: $basic-color;
+      border-radius: 5px;
+      border: none;
+      padding: 23px;
+      margin: 0 auto;
+   }
+}
