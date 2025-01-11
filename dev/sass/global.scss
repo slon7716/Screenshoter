@@ -63,7 +63,7 @@ h4 {
 }
 
 .small-text {
-   font-size: 1rem;
+   font-size: 1.125rem;
    font-weight: 400;
    line-height: 2;
 }
@@ -80,3 +80,17 @@ img,
    margin: 0 auto;
 }
 
+.custom-spacing {
+   height: 32px;
+}
+
+.download {
+   font-size: 1rem;
+   font-weight: 500;
+   line-height: 1.5;
+   color: #fff;
+   background-color: $basic-color;
+   border-radius: 5px;
+   border: none;
+   padding: 23px;
+}

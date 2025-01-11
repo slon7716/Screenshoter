@@ -1,18 +1,16 @@
 ///fonts///
 $font-primary: 'Rubik';
-$font-secondary:  'monospace';
+$font-secondary: 'monospace';
 
 ///colors///
 $basic-color: #131313;
 $primary-color: #7421B0;
 $secondary-color: #828282;
 $purple-color: #C0A9F0;
-$purple-light-color: #E7DBFF;
+$purple-light-color: #E7DBFF44;
 $dark-color: #565656;
 $grey-color: #CCCCCC;
-$gradient1: linear-gradient(to right, #7421B0 40%, #D08EFF 130%);
-$gradient2: linear-gradient(to left, rgba(116, 33, 176, 0.2) 0%, rgba(208, 142, 255, 0.2) 100%);
-$gradient3: linear-gradient(to right, #FF59F80D 0%, #AE72FF0D 20%, #90E9ED0D 41%, #5CD1670D 62%, #FFEE000D 83%);
+$gradient: linear-gradient(to left, rgba(116, 33, 176, 0.2) 0%, rgba(208, 142, 255, 0.2) 100%);
 
 @mixin opaque-glass {
    font-size: 1rem;
@@ -61,10 +59,6 @@ $gradient3: linear-gradient(to right, #FF59F80D 0%, #AE72FF0D 20%, #90E9ED0D 41%
    .text {
       line-height: 1.8;
 
-      .custom-spacing {
-         height: 32px;
-      }
-
       span {
          color: $primary-color;
       }
@@ -78,7 +72,7 @@ $gradient3: linear-gradient(to right, #FF59F80D 0%, #AE72FF0D 20%, #90E9ED0D 41%
    border-radius: 10px;
    box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.13);
    padding: 184px 303px;
-   
+
    .gif-small {
       font-size: 1.5rem;
       font-weight: 700;
@@ -109,7 +103,7 @@ $gradient3: linear-gradient(to right, #FF59F80D 0%, #AE72FF0D 20%, #90E9ED0D 41%
    .block-blur {
       width: 903px;
       height: 650px;
-      background: $gradient3;
+      background: linear-gradient(to right, #FF59F80D 0%, #AE72FF0D 20%, #90E9ED0D 41%, #5CD1670D 62%, #FFEE000D 83%);
       border-radius: 70px;
       backdrop-filter: blur(15px); // Размытие фона
       box-shadow: inset 0 0 0 3px #ffffff1f; // внутренний border
