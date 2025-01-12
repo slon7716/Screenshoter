@@ -13,8 +13,8 @@
 
    .plates {
       margin-bottom: 90px;
-
       @include plates;
+      
       .plate {
          height: 320px;
          padding: 60px 45px;

@@ -10,7 +10,6 @@ $purple-color: #C0A9F0;
 $purple-light-color: #E7DBFF44;
 $dark-color: #565656;
 $grey-color: #CCCCCC;
-$gradient: linear-gradient(to left, rgba(116, 33, 176, 0.2) 0%, rgba(208, 142, 255, 0.2) 100%);
 
 @mixin opaque-glass {
    font-size: 1rem;
@@ -18,7 +17,7 @@ $gradient: linear-gradient(to left, rgba(116, 33, 176, 0.2) 0%, rgba(208, 142, 2
    color: #fff;
    background-color: #C4C4C41A;
    backdrop-filter: blur(20px);
-   border: 1px solid #FFFFFF26;
+   box-shadow: inset 0 0 0 2px #ffffff26;
    border-radius: 10px;
    position: relative;
    z-index: 1;

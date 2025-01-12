@@ -1,0 +1,61 @@
+@use 'sass/variables' as *;
+
+.section-9 {
+   margin-bottom: 200px;
+   
+   .container {
+      width: 1441px;
+   }
+   .cube-and-glass {
+      margin-left: 125px;
+
+      .cube {
+         width: 59px;
+         height: 66px;
+         margin: 0 0 -34px 141px;
+      }
+   
+      .opaque-glass {
+         width: 228px;
+         height: 68px;
+         margin-bottom: 34px;
+         @include opaque-glass;
+         color: $secondary-color;
+      }
+   }
+
+   .title-and-text {
+      height: 149px;
+      display: flex;
+      gap: 97px;
+      margin-bottom: 37px;
+
+      h2 {
+         display: block;
+         width: 530px;
+
+         span {
+            color: $primary-color;
+         }
+      }
+
+      .text {
+         width: 457px;
+      }
+   }
+
+   .plates {
+      @include plates;
+      
+      .plate {
+         height: 349px;
+         padding: 50px 45px;
+
+         &:hover {
+            .star {
+               content: url(assets/img/star-dark.svg);
+            }
+         }
+      }
+   }
+}
