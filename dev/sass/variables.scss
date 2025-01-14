@@ -7,9 +7,9 @@ $basic-color: #131313;
 $primary-color: #7421B0;
 $secondary-color: #828282;
 $purple-color: #C0A9F0;
-$purple-light-color: #E7DBFF44;
+$purple-light-color: #E7DBFF44; 
 $dark-color: #565656;
-$grey-color: #CCCCCC;
+// $grey-color: #CCCCCC;
 
 @mixin opaque-glass {
    font-size: 1rem;
@@ -104,7 +104,7 @@ $grey-color: #CCCCCC;
       height: 650px;
       background: linear-gradient(to right, #FF59F80D 0%, #AE72FF0D 20%, #90E9ED0D 41%, #5CD1670D 62%, #FFEE000D 83%);
       border-radius: 70px;
-      backdrop-filter: blur(15px); // Размытие фона
+      backdrop-filter: blur(12px); // Размытие заднего фона
       box-shadow: inset 0 0 0 3px #ffffff1f; // внутренний border
       padding-top: 130px;
       margin-left: -80px;

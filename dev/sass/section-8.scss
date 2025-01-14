@@ -35,7 +35,7 @@
       background: $purple-light-color;
       border-radius: 70px;
       box-shadow: inset 0 0 0 4px #ffffff1f;
-      backdrop-filter: blur(15px);
+      backdrop-filter: blur(12px);
       margin: 0 56px -1724px;
    }
 
@@ -141,7 +141,6 @@
             }
 
             .text {
-               color: $secondary-color;
                line-height: 1.8;
 
                span {
