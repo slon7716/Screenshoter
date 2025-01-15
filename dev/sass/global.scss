@@ -12,16 +12,22 @@ html {
 }
 
 body {
+   max-width: 1920px;
    min-height: 100vh;
    font-family: $font-primary;
    color: $basic-color;
    background-color: #fff;
    display: flex;
    flex-direction: column;
+   margin: 0 auto;
 }
 
 a {
    text-decoration: none; /* Убирает подчеркивание */
+
+   &:hover {
+      color: $basic-color;
+   }
 }
 
 button,

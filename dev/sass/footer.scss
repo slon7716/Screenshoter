@@ -1,9 +1,39 @@
 @use 'sass/variables' as*;
 
 footer {
-    height: 100px;
-    background: $purple-color;
+    height: 296px;
     margin-top: auto;
+    
+    .container {
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 60px 240px;
+
+        h4 {
+            max-width: 178px;
+        }
+    }
+
+    .logo {
+        img {
+            width: 250px;
+            height: 39px;
+        }
+    }
+
+    .product {
+        h4 {
+            margin-bottom: 26px;
+        }
+
+        .quality {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
 }
 
  
