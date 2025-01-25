@@ -1,33 +1,38 @@
 @use 'sass/variables' as *;
 
 .section-6 {
-   margin-top: -150px;
-
+   height: 747px;
+   margin-bottom: 200px;
+   
    .main {
+      max-width: 1557px;
       display: flex;
-      justify-content: flex-end;
+      margin-left: auto;
    }
-
+   
    .info-about {
       width: 434px;
       height: 275px;
       margin-top: 260px;
+      margin-right: 120px;
       @include info-about;
    }
-
+   
    .right-part {
+      flex: 1;
       position: relative;
-      margin-left: 275px;
 
       .gradient-block {
-         width: 822px;
+         width: 100%;
+         max-width: 822px;
          height: 650px;
          background: linear-gradient(to left, rgba(116, 33, 176, 0.2) 0%, rgba(208, 142, 255, 0.2) 100%);
          box-shadow: inset 0 0 0 3px #ffffff1f;
          backdrop-filter: blur(20px);
          border-radius: 70px 0 0 70px;
          padding-top: 103px;
-         margin-top: 97px;
+         margin-top: -96px;
+         margin-left: auto;
       }
 
       .gif {
@@ -40,8 +45,7 @@
       .supertoroid-purple {
          width: 193px;
          height: 193px;
-         position: absolute;
-         right: 287px;
+         margin-left: 48%;
       }
    }
 

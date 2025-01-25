@@ -6,22 +6,25 @@
 
    .container {
       display: flex;
-      justify-content: flex-end;
    }
 
    .info-about {
       width: 434px;
       height: 303px;
       margin-top: 379px;
-      margin-right: 152px;
+      margin-left: auto;
       @include info-about;
    }
 
    .right-part {
       position: relative;
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
 
       .gif {
-         margin-right: 240px;
+         width: 100%;
+         margin-right: 18%;
          margin-top: 332px;
          position: relative;
          z-index: 1;
@@ -32,17 +35,17 @@
          width: 181px;
          height: 179px;
          position: absolute;
-         top: -90px;
-         right: 10px;
+         top: 130px;
+         right: 60px;
       }
 
       .ellipse {
-         width: 777px;
+         max-width: 777px;
          height: 920px;
          backdrop-filter: blur(10px);
          position: absolute;
          top: 0;
-         left: 168px;
+         right: 0;
       }
    }
 }

@@ -17,13 +17,16 @@ header {
 			}
 		}
 
-		.header-nav {
-			display: flex;
+		.burger {
+			display: none;
+		}
 
+		.header-nav {
 			.nav-list {
 				display: flex;
 				align-items: center;
 				gap: 60px;
+				padding: 0 24px 0 48px;
 
 				.nav-item {
 					font-size: 1rem;
@@ -44,10 +47,12 @@ header {
 					font-weight: 500;
 					color: $dark-color;
 					border: none;
+					margin-left: -18px;
 
 					&::after {
 						width: 7px;
 						height: 7px;
+						right: 17px;
 						border-bottom: 2px solid $dark-color;
                   border-right: 2px solid $dark-color;
 					}

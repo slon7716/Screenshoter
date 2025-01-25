@@ -5,12 +5,13 @@
 
    .container {
       display: flex;
-      gap: 54px;
    }
 
    .left-part {
+      max-width: 1096px;
+      flex: 1;
       position: relative;
-      @include left-part;
+      padding-right: 24px;
 
       img {
          width: 202px;
@@ -46,35 +47,36 @@
       }
 
       .block-blur {
-         width: 1042px;
+         max-width: 1042px;
          height: 811px;
-         padding-top: 163px;
-         margin-left: 0px;
          margin-top: -140px;
+         @include block-blur;
+         padding-top: 163px;
 
          .gif {
-            margin-left: 240px;
+            margin-left: 23%;
+            @include gif;
          }
-      }
 
-      .opague-glass {
-         width: 461px;
-         height: 168px;
-         padding: 30px 52px 30px 40px;
-         @include opaque-glass;
-         color: $secondary-color;
-         position: absolute;
-         bottom: 120px;
-         left: 362px;
-
-         span {
-            color: $basic-color;
+         .opague-glass {
+            max-width: 461px;
+            height: 168px;
+            padding: 30px 40px;
+            margin: -37px 0 0 34%;
+            @include opaque-glass;
+            color: $secondary-color;
+            border-radius: 16px;
+            background-color: #eeeeeeaa;
+   
+            span {
+               color: $basic-color;
+            }
          }
       }
    }
 
    .info-about {
-      width: 462px;
+      width: 448px;
       height: 208px;
       margin-top: 417px;
       @include info-about;

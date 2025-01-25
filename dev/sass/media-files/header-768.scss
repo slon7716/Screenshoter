@@ -1,0 +1,141 @@
+@use 'sass/variables' as *;
+
+header {
+	margin-top: 20px;
+
+	.container {
+      padding: 0 36px 0 45px;
+      align-items: center;
+      
+		.logo {
+			img {
+				width: 141px;
+				height: 22px;
+			}
+		}
+
+      .burger {
+         position: relative;
+         display: block;
+         width: 40px;
+         height: 40px;
+			background-color: initial;
+         border: none;
+         border-radius: 0;
+         padding: 10px;
+         margin-left: auto;
+      
+         span {
+            display: block;
+            width: 20px;
+            height: 3.3px;
+            background-color: $basic-color;
+				border-radius: 2px;
+      
+            &::before,
+            &::after {
+               content: '';
+               position: absolute;
+               top: 10px;
+               left: 15px;
+               width: 15px;
+               height: 3.3px;
+               background-color: $basic-color;
+					border-radius: 2px;
+            }
+      
+            &::after {
+               top: 27px;
+					left: 20px;
+					width: 10px;
+            }
+         }
+      
+         &.active {
+            span {
+               display: block;
+               width: 100%;
+               height: 2px;
+               background-color: #000;
+               transform: rotate(45deg);
+      
+               &::before,
+               &::after {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 2px;
+                  background-color: #000;
+                  transform: rotate(90deg);
+               }
+      
+               &::after {
+                  opacity: 0;
+               }
+            }
+         }
+      }
+
+		.mobile-container.show {
+			clip-path: inset(0 0 0 0);
+		}
+
+		.mobile-container {
+			width: 100%;
+			background-color: $purple-color;
+			padding: 15px 0 20px 0;
+			position: absolute;
+			top: 40px;
+			left: 0;
+			z-index: 2;
+			clip-path: inset(0 0 100% 0);
+			transition: 0.7s;
+		
+			.header-nav {
+				max-width: initial;
+				width: 100%;
+				margin: 12px 0 36px;
+				display: flex;
+				justify-content: center;
+		
+				.nav-list {
+					flex-direction: column;
+					gap: 0;
+					padding: 0;
+		
+					.nav-item {
+						margin: 12px 0;
+					}
+
+					form {
+						margin-top: 12px;
+					}
+
+					.nice-select {
+						height: 24px;
+						line-height: 24px;
+						font-size: 0.875rem;
+						margin: 0;
+	
+						&::after {
+							width: 6px;
+							height: 6px;
+						}
+	
+						.list {
+							margin-top: 2px;
+	
+							.option {
+								font-size: 0.75rem;
+								line-height: 24px;
+								min-height: 24px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

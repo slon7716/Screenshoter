@@ -12,7 +12,7 @@ $dark-color: #565656;
 
 @mixin opaque-glass {
    font-size: 1rem;
-   line-height: 1.6;
+   line-height: 1.625;
    color: #fff;
    background-color: #C4C4C41A;
    backdrop-filter: blur(20px);
@@ -28,12 +28,13 @@ $dark-color: #565656;
    justify-content: space-between;
 
    .plate {
-      width: 338px;
+      flex: 25%;
+      max-width: 338px;
       height: 294px;
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.13);
-      padding: 50px 60px 60px;
+      padding: 50px;
 
       img {
          width: 80px;
@@ -64,12 +65,14 @@ $dark-color: #565656;
 }
 
 @mixin gif {
-   width: 705px;
+   max-width: 705px;
    height: 397px;
    background-color: #fff;
    border-radius: 10px;
    box-shadow: 0 18px 45px -10px rgba(0, 0, 0, 0.13);
-   padding: 184px 303px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
    .gif-small {
       font-size: 1.5rem;
@@ -84,36 +87,18 @@ $dark-color: #565656;
       line-height: 1.19;
       color: $primary-color;
       opacity: 0.16;
-      margin-top: -59px;
-      margin-left: 20px;
+      margin-top: -34px;
+      margin-left: -19px;
    }
 }
 
-@mixin left-part {
-   img {
-      width: 150px;
-      height: 246px;
-      margin-top: 113px;
-      position: relative;
-      z-index: 1;
-   }
-
-   .block-blur {
-      width: 903px;
-      height: 650px;
-      background: linear-gradient(to right, #FF59F80D 0%, #AE72FF0D 20%, #90E9ED0D 41%, #5CD1670D 62%, #FFEE000D 83%);
-      border-radius: 70px;
-      backdrop-filter: blur(12px); // Размытие заднего фона
-      box-shadow: inset 0 0 0 3px #ffffff1f; // внутренний border
-      padding-top: 130px;
-      margin-left: -80px;
-      margin-top: -104px;
-      position: relative;
-      z-index: 1;
-
-      .gif {
-         margin-left: 310px;
-         @include gif;
-      }
-   }
+@mixin block-blur {
+   width: 100%;
+   background: linear-gradient(to right, #FF59F82A 0%, #AE72FF2A 20%, #90E9ED2A 41%, #5CD1672A 62%, #FFEE002A 83%);
+   border-radius: 0 70px 70px 0;
+   backdrop-filter: blur(12px); // Размытие заднего фона
+   box-shadow: inset 0 0 0 3px #ffffff1f; // внутренний border
+   padding-top: 130px;
+   position: relative;
+   z-index: 1;
 }

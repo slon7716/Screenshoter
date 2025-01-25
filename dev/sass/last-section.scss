@@ -9,55 +9,59 @@
    }
    
    .line-5 {
-      width: 1920px;
+      max-width: 1920px;
       height: 483px;
       position: absolute;
       top: -278px;
    }
 
    .small-container {
-      width: 1682px;
+      max-width: 1682px;
       display: flex;
       justify-content: space-between;
-      position: relative;
+      gap: 24px;
    }
-
+   
+   
    .cone {
       width: 170px;
       height: 176px;
       position: absolute;
-      left: 432px;
+      left: 25%;
       bottom: 137px;
    }
-
-   .save {
-      width: 144px;
-      height: 144px;
-      position: absolute;
-      left: 610px;
-      bottom: -29px;
-      z-index: 2;
-   }
-
+   
    .opaque-glass {
-      width: 825px;
+      width: 100%;
+      max-width: 825px;
       height: 210px;
       margin-top: 111px;
       @include opaque-glass;
       box-shadow: inset 0 0 0 3px #ffffff1f;
-      background: linear-gradient(to right, #EBF3D077 0%, #FF59F840 15%, #AE72FF40 41%, #90E9ED40 62%, #5CD16740 85%, #FFEE0030 96%);
+      background: linear-gradient(to right, #EBF3D077 0%, #FF59F840 15%, #AE72FF40 36%, #90E9ED40 58%, #5CD16740 80%, #FFEE0030 96%);
+
+      .save {
+         width: 144px;
+         height: 144px;
+         position: absolute;
+         right: 71px;
+         bottom: -29px;
+      }
    }
 
    .right-part {
-      width: 700px;
+      width: 100%;
+      max-width: 700px;
       height: 321px;
 
       h2 {
+         max-width: 577px;
          height: 191px;
          font-weight: 400;
          line-height: 1.4;
          margin-bottom: 60px;
       }
+
       button {
          font-size: 1rem;
          font-weight: 500;
