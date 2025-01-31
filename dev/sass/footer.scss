@@ -11,32 +11,37 @@ footer {
         justify-content: space-between;
         gap: 24px;
         padding: 60px 60px 0;
-
-        h4 {
-            max-width: 178px;
-        }
     }
 
     .logo {
         margin-right: 48px;
-
+        
         img {
             width: 250px;
             height: 39px;
         }
     }
+    
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
 
-    .product {
         h4 {
+            max-width: 178px;
             margin-bottom: 26px;
         }
 
-        .quality {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
+        .product {
+            .quality {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .text {
+                    white-space: nowrap;
+                }
+            }
         }
     }
 }
-
- 

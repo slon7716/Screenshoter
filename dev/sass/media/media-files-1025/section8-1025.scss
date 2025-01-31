@@ -1,0 +1,52 @@
+.section-8 {
+   margin-bottom: 100px;
+
+   .container {
+      padding: 52px 19px 0;
+   }
+
+   .ball {
+      width: 152px;
+      height: 152px;
+      right: 103px;
+   }
+
+   .cylinder-left {
+      width: 96px;
+      height: 153px;
+   }
+
+   .cylinder-right {
+      width: 116px;
+      height: 226px;
+   }
+
+   .translucent-block {
+      padding: 60px 26px 56px;
+
+      .fuctions {
+         margin-bottom: 100px;
+
+         .function {
+            img {
+               width: 90px;
+               height: 97px;
+            }
+            
+            &:first-child {
+               img {
+                  height: 90px;
+               }
+            }
+
+            .number-and-title {
+               .number {
+                  font-size: 1.25rem;
+                  margin-right: 18px;
+               }
+            }
+         }
+      }
+   }
+}
+

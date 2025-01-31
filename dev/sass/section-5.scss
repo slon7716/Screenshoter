@@ -5,18 +5,17 @@
 
    .container {
       display: flex;
+      gap: 54px;
    }
 
    .left-part {
-      max-width: 1096px;
+      max-width: 1042px;
       flex: 1;
       position: relative;
-      padding-right: 24px;
 
       img {
          width: 202px;
          height: 299px;
-         margin-top: 0;
       }
 
       .small-gif {
@@ -51,26 +50,23 @@
          height: 811px;
          margin-top: -140px;
          @include block-blur;
-         padding-top: 163px;
+      }
+      
+      .gif {
+         margin: -648px 5% 0 23%;
+         @include gif;
+      }
 
-         .gif {
-            margin-left: 23%;
-            @include gif;
-         }
-
-         .opague-glass {
-            max-width: 461px;
-            height: 168px;
-            padding: 30px 40px;
-            margin: -37px 0 0 34%;
-            @include opaque-glass;
-            color: $secondary-color;
-            border-radius: 16px;
-            background-color: #eeeeeeaa;
-   
-            span {
-               color: $basic-color;
-            }
+      .opague-glass {
+         max-width: 461px;
+         padding: 30px 40px;
+         margin: -37px 9% 0 34%;
+         @include opaque-glass;
+         color: $secondary-color;
+         border-radius: 16px;
+         
+         span {
+            color: $basic-color;
          }
       }
    }
@@ -78,7 +74,7 @@
    .info-about {
       width: 448px;
       height: 208px;
-      margin-top: 417px;
+      margin: 417px 24px 0 0;
       @include info-about;
    }
 }

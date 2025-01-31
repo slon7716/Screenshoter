@@ -1,0 +1,37 @@
+@use 'sass/variables' as *;
+
+.section-6 {
+   margin-bottom: 150px;
+   
+   .main {
+      flex-direction: column;
+   }
+   
+   .info-about {
+      order: 2;
+      height: 152px;
+      margin-top: 60px;
+   }
+   
+   .right-part {
+      .gradient-block {
+         max-width: 494px;
+         height: 396px;
+         top: 61px;
+      }
+
+      .gif {
+         margin: 122px 104px 0;
+      }
+
+      .supertoroid-purple {
+         width: 123px;
+         height: 123px;
+         right: 174px;
+      }
+   }
+
+   .line-3 {
+      bottom: -170px;
+   }
+}

@@ -1,2 +1,35 @@
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
+   header {
+		.container {
+			.header-nav {
+				.nav-list {
+					gap: 48px;
+				}
+			}
+		}
+	}
+
+   .section-1 {
+      .screenshot {
+         gap: 206px;
+
+         .info-about-site {
+            h1 {
+               margin-bottom: 30px;
+            }
+
+            .small-text {
+               margin-bottom: 35px;
+            }
+
+            button {
+               margin-bottom: 50px;
+            }
+         }
+      }
+
+      .decorative-line-1 {
+         height: 760px;
+      }
+   }
 }

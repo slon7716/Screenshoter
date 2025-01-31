@@ -1,0 +1,44 @@
+.section-9 {
+   margin-bottom: 100px;
+
+   .container {
+      padding: 0 45px;
+   }
+
+   .cube-and-glass {
+      margin-left: 0;
+
+      .cube {
+         width: 53px;
+         height: 59px;
+         margin: 0 0 -30px 127px;
+      }
+   
+      .opaque-glass {
+         max-width: 228px;
+         padding: 8px 24px;
+         margin-bottom: 44px;
+      }
+   }
+
+   .title-and-text {
+      height: 96px;
+      gap: 80px;
+      padding: 0;
+      margin-bottom: 60px;
+
+      h2 {
+         max-width: 240px;
+      }
+
+      .small-text {
+         max-width: 308px;
+      }
+   }
+
+   .plates {
+      .plate {
+         height: 294px;
+      }
+   }
+}

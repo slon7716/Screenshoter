@@ -8,6 +8,8 @@ header {
       align-items: center;
       
 		.logo {
+			padding: 0;
+			
 			img {
 				width: 141px;
 				height: 22px;
@@ -85,7 +87,7 @@ header {
 		.mobile-container {
 			width: 100%;
 			background-color: $purple-color;
-			padding: 15px 0 20px 0;
+			padding: 20px 0 52px 0;
 			position: absolute;
 			top: 40px;
 			left: 0;
@@ -96,22 +98,13 @@ header {
 			.header-nav {
 				max-width: initial;
 				width: 100%;
-				margin: 12px 0 36px;
 				display: flex;
 				justify-content: center;
 		
 				.nav-list {
 					flex-direction: column;
-					gap: 0;
+					gap: 20px;
 					padding: 0;
-		
-					.nav-item {
-						margin: 12px 0;
-					}
-
-					form {
-						margin-top: 12px;
-					}
 
 					.nice-select {
 						height: 24px;

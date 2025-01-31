@@ -1,99 +1,72 @@
 @use 'sass/variables' as *;
 
 .section-8 {
-   margin-bottom: 200px;
-
-   .container {
-      padding: 77px 56px 0;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-   }
-
-   .ball {
-      width: 246px;
-      height: 246px;
-      position: absolute;
-      right: 263px;
-      top: 0;
-   }
-
    .cylinder-left {
-      width: 165px;
-      height: 245px;
-      position: absolute;
-      left: 0;
-      top: 399px;
+      // width: 165px;
+      // height: 245px;
+      top: 1283px;
    }
 
    .cylinder-right {
-      width: 288px;
-      height: 428px;
-      position: absolute;
-      right: 0;
-      top: 760px;
+      // width: 288px;
+      // height: 428px;
+      top: 1872px;
    }
 
    .translucent-block {
-      background: $purple-light-color;
-      border-radius: 70px;
-      box-shadow: inset 0 0 0 4px #ffffff1f;
-      backdrop-filter: blur(12px);
-      padding: 100px 9.5% 61px;
+      padding: 60px 26px 56px;
 
       h2 {
-         margin-bottom: 100px;
+         margin-bottom: 75px;
          
          &:first-child {
-            max-width: 470px;
-         }
-   
-         span {
-            color: $primary-color;
+            max-width: 262px;
          }
       }
    
       .fuctions {
-         display: flex;
-         justify-content: space-between;
-         gap: 24px;
-         margin-bottom: 200px;
+         flex-direction: column;
+         gap: 60px;
+         padding-left: 67px;
          
          .function {
-            max-width: 398px;
+            max-width: 100%;
+            display: flex;
             
             img {
-               width: 111px;
-               height: 120px;
-               margin-bottom: 49px;
+               // width: 90px;
+               // height: 97px;
+               margin-bottom: 0;
+               margin-right: 78px;
             }
             
-            &:first-child {
-               img {
-                  height: 111px;
-                  margin-bottom: 59px;
+            // &:first-child {
+            //    img {
+            //       height: 90px;
+            //    }
+            // }
+
+            &:last-child {
+               .text {
+                  height: 142px;
                }
             }
             
             .number-and-title {
-               display: flex;
-               margin-bottom: 60px;
+               margin-bottom: 0;
                
                .number {
-                  font-size: 2.25rem;
-                  font-weight: 700;
-                  line-height: 1.2;
-                  color: $primary-color;
-                  margin-right: 12.5%;
+                  font-size: 1.25rem;
+                  margin-right: 18px;
                }
                
                .title {
-                  max-width: 155px;
+                  max-width: 116px;
                }
             }
    
             .text {
-               height: 312px;
+               height: 188px;
             }
          }
       }
@@ -150,10 +123,6 @@
                }
             }
          }
-      }
-   
-      .download {
-         display: block;
       }
    }
 }

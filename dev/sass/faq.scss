@@ -4,7 +4,7 @@
    margin-bottom: 200px;
    
    .container {
-      background: rgba(231, 219, 255, 0.2666666667);
+      background: rgba(231, 219, 255, 0.3);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -12,9 +12,6 @@
    }
 
    .super-title {
-      font-size: 3rem;
-      font-weight: 700;
-      line-height: normal;
       margin: 100px 0 60px;
    }
 
@@ -39,13 +36,13 @@
             text-align: left;
             border-radius: 16px;
             border: none;
-            padding: 48px 308px 48px 50px;
+            padding: 48px 130px 48px 50px;
             display: flex;
             align-items: center;
 
             &::after {
                content: "";
-               background: url(assets/img/plus.svg);
+               background: url(assets/img/plus.svg) center;
                position: absolute;
                width: 40px;
                height: 40px;
@@ -64,14 +61,12 @@
          }
    
          &__content {
-            width: 584px;
             font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.8;
             color: $secondary-color;
             border-radius: 16px;
-            padding-bottom: 61px;
-            margin-left: 245px;
+            padding: 0 245px 61px;
             display: none;
 
          }

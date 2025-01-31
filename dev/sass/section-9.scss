@@ -16,11 +16,12 @@
       }
    
       .opaque-glass {
-         width: 228px;
-         height: 68px;
+         max-width: 228px;
+         padding: 8px 24px;
          margin-bottom: 34px;
          @include opaque-glass;
          color: $secondary-color;
+         background-color: #C4C4C433;
       }
    }
 
@@ -28,6 +29,7 @@
       height: 149px;
       display: flex;
       gap: 97px;
+      padding: 0 24px;
       margin-bottom: 37px;
 
       h2 {
@@ -39,8 +41,9 @@
          }
       }
 
-      .text {
+      .small-text {
          max-width: 457px;
+         line-height: 2;
       }
    }
 

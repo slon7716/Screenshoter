@@ -19,7 +19,7 @@
       max-width: 1682px;
       display: flex;
       justify-content: space-between;
-      gap: 24px;
+      gap: 48px;
    }
    
    
@@ -53,6 +53,7 @@
       width: 100%;
       max-width: 700px;
       height: 321px;
+      padding-right: 24px;
 
       h2 {
          max-width: 577px;
@@ -62,7 +63,7 @@
          margin-bottom: 60px;
       }
 
-      button {
+      .now {
          font-size: 1rem;
          font-weight: 500;
          line-height: 1.5;
@@ -71,6 +72,10 @@
          border-radius: 5px;
          border: none;
          padding: 23px 39px;
+      }
+
+      .download {
+         display: none;
       }
    }
 }

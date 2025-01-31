@@ -1,0 +1,23 @@
+@use 'sass/variables' as *;
+
+.section-2 {
+   .container {
+      padding: 0 45px;
+   }
+
+   .info {
+      height: 149px;
+      gap: 48px;
+      justify-content: space-between;
+      padding: 0;
+      margin-bottom: 30px;
+
+      h2 {
+         max-width: 253px;
+      }
+
+      .text {
+         max-width: 319px;
+      }
+   }
+}

@@ -1,0 +1,58 @@
+@use 'sass/variables' as *;
+
+.last-section {
+   height: initial;
+   margin-bottom: 100px;
+   
+   // .line-5 {
+   //    top: -278px;
+   // }
+
+   .small-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 24px;
+   }
+   
+   
+   .cone {
+      left: 280px;
+      bottom: initial;
+   }
+   
+   .opaque-glass {
+      width: initial;
+      margin-top: 103px;
+      margin-right: 119px;
+
+      .save {
+         width: 122px;
+         height: 122px;
+         right: 93px;
+         bottom: -18px;
+      }
+   }
+
+   .right-part {
+      max-width: 385px;
+      height: initial;
+      padding: 0;
+      margin: 0 auto;
+
+      h2 {
+         max-width: 577px;
+         height: 133px;
+         font-size: 1.5rem;
+         margin-bottom: 40px;
+      }
+
+      .now {
+         display: none;
+      }
+
+      .download {
+         display: block;
+      }
+   }
+}

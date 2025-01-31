@@ -13,9 +13,9 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@use 'sass/fonts';
 @use 'sass/variables';
 @use 'sass/global';
-@use 'sass/fonts';
 @use 'sass/header';
 @use 'sass/section-1';
 @use 'sass/section-2';
@@ -29,4 +29,5 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @use 'sass/faq';
 @use 'sass/last-section';
 @use 'sass/footer';
+
 @use 'sass/media/media';

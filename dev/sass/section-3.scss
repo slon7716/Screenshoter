@@ -12,7 +12,10 @@
       width: 100%;
       max-width: 1638px;
       display: flex;
-      overflow: hidden;
+   }
+   
+   .left-part {
+      flex: 1;
 
       img {
          width: 150px;
@@ -21,28 +24,24 @@
          position: relative;
          z-index: 1;
       }
-   }
-
-   .left-part {
-      flex: 1;
 
       .block-blur {
          max-width: 823px;
          height: 650px;
          margin-top: -104px;
          @include block-blur;
+      }
 
-         .gif {
-            @include gif;
-            margin-left: 25%;
-         }
+      .gif {
+         margin: -520px -13% 0 25%;
+         @include gif;
       }
    }
 
    .info-about {
       width: 452px;
       height: 272px;
-      margin: 437px 0 0 24px;
+      margin: 456px 0 0 120px;
       @include info-about;
    }
 }

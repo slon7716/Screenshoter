@@ -15,9 +15,9 @@ $dark-color: #565656;
    line-height: 1.625;
    color: #fff;
    background-color: #C4C4C41A;
-   backdrop-filter: blur(20px);
-   box-shadow: inset 0 0 0 2px #ffffff26;
+   backdrop-filter: blur(14px);
    border-radius: 10px;
+   box-shadow: inset 0 0 0 2px #ffffff26;
    position: relative;
    z-index: 1;
 }
@@ -48,10 +48,23 @@ $dark-color: #565656;
          cursor: url(assets/img/cursor.svg), auto;
       }
    }
+
+   @media (max-width: 1024.9px) {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px 17px;
+
+      .plate {
+         max-width: 324px;
+         min-width: 324px;
+         padding: 60px;
+      }
+   }
 }
 
 @mixin info-about {
    h2 {
+      padding-right: 24px;
       margin-bottom: 40px;
    }
 
@@ -60,6 +73,17 @@ $dark-color: #565656;
 
       span {
          color: $primary-color;
+      }
+   }
+
+   @media (max-width: 1024.9px) {
+      width: 100%;
+      padding: 0 45px;
+      display: flex;
+      justify-content: space-between;
+
+      .text {
+         max-width: 441px;
       }
    }
 }
@@ -73,6 +97,8 @@ $dark-color: #565656;
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
+   z-index: 1;
 
    .gif-small {
       font-size: 1.5rem;
@@ -90,6 +116,11 @@ $dark-color: #565656;
       margin-top: -34px;
       margin-left: -19px;
    }
+
+   @media (max-width: 1024.9px) {
+      max-width: 561px;
+      height: 315px;
+   }
 }
 
 @mixin block-blur {
@@ -98,7 +129,6 @@ $dark-color: #565656;
    border-radius: 0 70px 70px 0;
    backdrop-filter: blur(12px); // Размытие заднего фона
    box-shadow: inset 0 0 0 3px #ffffff1f; // внутренний border
-   padding-top: 130px;
    position: relative;
    z-index: 1;
 }

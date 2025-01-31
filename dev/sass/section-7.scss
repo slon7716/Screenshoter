@@ -1,8 +1,7 @@
 @use 'sass/variables' as *;
 
 .section-7 {
-   height: 480px;
-   margin-bottom: 100px;
+   margin-bottom: 23px;
 
    .container {
       max-width: 1441px;
@@ -38,4 +37,13 @@
          }
       }
    }
+
+   @media (max-width: 1024.9px) {
+      margin-bottom: 48px;
+
+      .container {
+         padding: 0 45px;
+      }
+   }
 }
+

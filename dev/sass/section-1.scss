@@ -1,19 +1,26 @@
 @use 'sass/variables' as *;
 
 .section-1 {
-   margin-top: -88px;
+   border: 1px dashed;
+   margin: -88px 0 288px;
+
+   .container {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+   }
 
    .screenshot {
-      border: 1px dashed;
+      width: 100%;
+      max-width: 1700px;
       display: flex;
-      gap: 210px;
-      position: relative;
+      gap: 267px;
       overflow: hidden;
 
       .info-about-site {
-         max-width: 454px;
-         margin-top: 283px;
-         margin-left: auto;
+         max-width: 464px;
+         padding-left: 48px;
+         margin-top: auto;
          margin-right: auto;
          
          .white {
@@ -42,22 +49,20 @@
             }
          }
       
-   
-         .text {
+         .small-text {
             width: 438px;
-            height: 83px;
-            margin-bottom: 80px;
+            margin-bottom: 55px;
          }
    
          button {
             font-size: 1rem;
             font-weight: 500;
             line-height: 1.5;
-            background: linear-gradient(to right, #7421B0 40%, #D08EFF 130%);
+            background: linear-gradient(to right, #6b1aa5 0%, #ab41f7 100%);
             color: #fff;
-            border-radius: 5px;
+            border-radius: 10px;
             border: none;
-            padding: 23px 15px;
+            padding: 23px;
             margin-bottom: 126px;
          }
    
@@ -74,12 +79,10 @@
          background: linear-gradient(to bottom, #7421B0 0%, #D08EFF 100%);
          border-radius: 70px;
          padding: 88px 0 97px;
-         margin-top: auto;
-         margin-right: -98px;
-         margin-left: auto;
+         margin: 162px -98px 0 0;
    
          .screen {
-            width: 106%;
+            width: 100%;
             max-width: 848px;
             margin-left: -30.4%;
             position: relative;
@@ -98,7 +101,7 @@
    }
 
    .decorative-line-1 {
-      max-width: 1900px;
+      max-width: 1920px;
       height: 968px;
       position: absolute;
       top: 150px;
