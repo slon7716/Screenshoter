@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="shortcut icon" href="assets/img/supertoroid-purple.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/supertoroid-purple.svg" type="image/x-icon">
     <title>Screenshoter</title>
 </head>
 
@@ -20,32 +20,36 @@
             <a class="logo" href="index.html">
             <img src="assets/img/logo.svg" alt="logo">
         </a>
-            <nav class="header-nav">
-                <ul class="nav-list">
-                    <a href="#" class="nav-item">Функції</a>
-                    <a href="#" class="nav-item">Переваги</a>
-                    <a href="#" class="nav-item">Як використовувати</a>
-                    <a href="#" class="nav-item">Часті питання</a>
-                    <form>
-                        <select name="language">
-                            <option value="ukrainian">Ukr</option>
-                            <option value="english">Eng</option>
-                        </select>
-                    </form>
-                </ul>
-            </nav>
+            <div class="mobile-container">
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <a href="#" class="nav-item">Функції</a>
+                        <a href="#" class="nav-item">Переваги</a>
+                        <a href="#" class="nav-item">Як використовувати</a>
+                        <a href="#" class="nav-item">Часті питання</a>
+                        <form>
+                            <select name="language">
+                                <option value="ukrainian">Ukr</option>
+                                <option value="english">Eng</option>
+                            </select>
+                        </form>
+                    </ul>
+                </nav>
+            </div>
+            <button type="button" class="burger"><span></span></button>
         </div>
     </header>
+
     <main class='wrapper'>
         <section class="section-1">
             <div class="container">
                 <div class="screenshot">
                     <div class="info-about-site">
-                        <img class="white" src="assets/img/supertoroid-white.svg" alt="supertoroid-white">
+                        <img class="white" src="assets/img/supertoroid-white.svg" alt="supertoroid">
                         <h1>Робіть знімки та записуйте екран <span>в 1 клік</span>
                     <img src="assets/img/frame.svg" alt="frame">
                 </h1>
-                        <p class="text">Разом зі Screenshoter можна в один клік зробити знімок або записати те, що відбувається на екрані ПК, щоб поділитися з будь-ким</p>
+                        <p class="small-text">Разом зі Screenshoter можна в один клік зробити знімок або записати те, що відбувається на екрані ПК, щоб поділитися з будь-ким</p>
                         <button type="button">Завантажити безкоштовно</button>
                         <img class="arrow-down" src="assets/img/arrow-down.svg" alt="arrow-down">
                     </div>
@@ -61,7 +65,7 @@
             <div class="container">
                 <div class="info">
                     <h2>Зустрічайте – скріншоти та запис екрана <span>2 в 1</span></h2>
-                    <div class="text">Більше не потрібно шукати дві окремі програми для скріншотів та
+                    <div class="small-text">Більше не потрібно шукати дві окремі програми для скріншотів та
                         запису екрана. Screenshoter допоможе
                         <span>зробити знімок екрану, записати відео та поділитися ним з ким завгодно.</span>
                         Можна виділити весь екран, певну область або активне вікно.
@@ -95,10 +99,10 @@
                     <div class="left-part">
                         <img src="assets/img/supertoroid-white-big.svg" alt="supertoroid">
                         <div class="block-blur">
-                            <div class="gif">
-                                <div class="gif-small">gif.</div>
-                                <div class="gif-big">gif.</div>
-                            </div>
+                        </div>
+                        <div class="gif">
+                            <div class="gif-small">gif.</div>
+                            <div class="gif-big">gif.</div>
                         </div>
                     </div>
                     <div class="info-about">
@@ -146,10 +150,10 @@
                         <div class="gif-big">gif.</div>
                     </div>
                     <div class="block-blur">
-                        <div class="gif">
-                            <div class="gif-small">gif.</div>
-                            <div class="gif-big">gif.</div>
-                        </div>
+                    </div>
+                    <div class="gif">
+                        <div class="gif-small">gif.</div>
+                        <div class="gif-big">gif.</div>
                     </div>
                     <div class="opague-glass">
                         <span>Файли зберігаються протягом 1 року</span>
@@ -181,18 +185,18 @@
                         </div>
                     </div>
                     <div class="right-part">
-                        <img class="supertoroid-purple" src="assets/img/supertoroid-purple.svg" alt="cube">
-                        <div class="gradient-block">
-                            <div class="gif">
-                                <div class="gif-small">gif.</div>
-                                <div class="gif-big">gif.</div>
-                            </div>
+                        <img class="supertoroid-purple" src="assets/img/supertoroid-purple.svg" alt="supertoroid">
+                        <div class="gif">
+                            <div class="gif-small">gif.</div>
+                            <div class="gif-big">gif.</div>
                         </div>
+                        <div class="gradient-block"></div>
                     </div>
                 </div>
                 <img class="line-3" src="assets/img/decorative-line-3.svg" alt="line">
             </div>
         </div>
+
         <div class="section-7">
             <div class="container">
                 <div class="plates">
@@ -222,8 +226,7 @@
                 <img class="ball" src="assets/img/sphere-purple.svg" alt="ball">
                 <img class="cylinder-left" src="assets/img/cylinder-left.svg" alt="cylinder">
                 <img class="cylinder-right" src="assets/img/cylinder-right.svg" alt="cylinder">
-                <div class="translucent-block"></div>
-                <div class="container-small">
+                <div class="translucent-block">
                     <h2><span>Screenshoter</span> - це функції на кожен день</h2>
                     <div class="fuctions">
                         <div class="function">
@@ -232,7 +235,7 @@
                                 <div class="number">01.</div>
                                 <h3 class="title">Обмін ідеями</h3>
                             </div>
-                            <div class="small-text">Коли потрібно щось наочно показати колезі, виконавцю чи замовнику —
+                            <div class="text">Коли потрібно щось наочно показати колезі, виконавцю чи замовнику —
                                 можна зробити знімок екрану і додати до нього коментар.
                                 <div class="custom-spacing"></div>
                                 А якщо ситуація потребує детальнішого пояснення — окей, не проблема. Screenshoter
@@ -245,7 +248,7 @@
                                 <div class="number">02.</div>
                                 <h3 class="title">Створення інструкцій</h3>
                             </div>
-                            <div class="small-text">Чи потрібно щось наочно пояснити? Створюйте зручні, покрокові
+                            <div class="text">Чи потрібно щось наочно пояснити? Створюйте зручні, покрокові
                                 інструкції, додаючи коментарі та візуальні позначки у необхідному місці скріншота.
                                 <div class="custom-spacing"></div>
                                 Поділитися знімком або відеозаписом можна за допомогою посилання, яке миттєво
@@ -258,7 +261,7 @@
                                 <div class="number">03.</div>
                                 <h3 class="title">Зворотній зв'язок</h3>
                             </div>
-                            <div class="small-text">Якщо під час роботи програми, сайту чи сервісу виникла помилка,
+                            <div class="text">Якщо під час роботи програми, сайту чи сервісу виникла помилка,
                                 її можна миттєво зафіксувати.
                                 <div class="custom-spacing"></div>
                                 Надішліть скріншот у техпідтримку, де буде видно, в чому саме полягає проблема.
@@ -266,26 +269,24 @@
                         </div>
                     </div>
                     <h2>Як використовувати <span>Screenshoter</span></h2>
-                    <div class="how-using">
-                        <div class="steps">
-                            <div class="step">
-                                <h2>Крок 1.</h2>
-                                <div class="white-block">
-                                    <button>Завантажити безкоштовно</button>
-                                </div>
-                                <div class="text"><span>Завантажте програму</span> на свій ПК чи ноутбук</div>
+                    <div class="steps">
+                        <div class="step">
+                            <h2>Крок 1.</h2>
+                            <div class="white-block">
+                                <button>Завантажити безкоштовно</button>
                             </div>
-                            <div class="step">
-                                <h2>Крок 2.</h2>
-                                <div class="white-block">Кадр із завантаженням програми</div>
-                                <div class="text"><span>Запустіть Screenshoter:</span> програма буде працювати у фоновому режимі
-                                </div>
+                            <div class="text"><span>Завантажте програму</span> на свій ПК чи ноутбук</div>
+                        </div>
+                        <div class="step">
+                            <h2>Крок 2.</h2>
+                            <div class="white-block">Кадр із завантаженням програми</div>
+                            <div class="text"><span>Запустіть Screenshoter:</span> програма буде працювати у фоновому режимі
                             </div>
-                            <div class="step">
-                                <h2>Крок 3.</h2>
-                                <div class="white-block">Кадр із ярликом програми</div>
-                                <div class="text"><span>Насолоджуйтесь зручністю</span> та швидкодією</div>
-                            </div>
+                        </div>
+                        <div class="step">
+                            <h2>Крок 3.</h2>
+                            <div class="white-block">Кадр із ярликом програми</div>
+                            <div class="text"><span>Насолоджуйтесь зручністю</span> та швидкодією</div>
                         </div>
                     </div>
                     <button class="download">Завантажити безкоштовно</button>
@@ -300,7 +301,7 @@
                 </div>
                 <div class="title-and-text">
                     <h2><span>Screenshoter</span> корисний всім, хто працює в інтернеті</h2>
-                    <div class="text">Узгоджуйте робочі питання, показуйте цікаві речі та обговорюйте будь-які теми.
+                    <div class="small-text">Узгоджуйте робочі питання, показуйте цікаві речі та обговорюйте будь-які теми.
                         Діліться коментарями за допомогою безкоштовного інструменту 2 в 1.
                     </div>
                 </div>
@@ -327,7 +328,7 @@
         </div>
         <div class="faq">
             <div class="container">
-                <div class="super-title">FAQ</div>
+                <h1 class="super-title">FAQ</h1>
                 <div class="accordion">
                     <div class="accordion-item">
                         <button class="accordion-item__button">
@@ -373,32 +374,37 @@
                 <img class="line-5" src="assets/img/decorative-line-5.svg" alt="line">
                 <div class="small-container">
                     <img class="cone" src="assets/img/inclined-cone.svg" alt="cone">
-                    <img class="save" src="assets/img/save-dark.svg" alt="save">
-                    <div class="opaque-glass"></div>
+                    <div class="opaque-glass">
+                        <img class="save" src="assets/img/save-dark.svg" alt="save">
+                    </div>
                     <div class="right-part">
                         <h2>Приєднуйтесь до 50 000 + користувачів, які щодня використовують Screenshoter у роботі
                та особистому листуванні</h2>
-                        <button>Завантажити зараз</button>
+                        <button class="now">Завантажити зараз</button>
+                        <button class="download">Завантажити безкоштовно</button>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
     <footer>
         <div class="container">
             <a class="logo" href="index.html">
 			<img src="assets/img/logo.svg" alt="logo">
 	   </a>
-            <div class="product">
-                <h4>Продукт</h4>
-                <div class="quality">
-                    <a href="#" class="small-text">Функції</a>
-                    <a href="#" class="small-text">Переваги</a>
-                    <a href="#" class="small-text">Як використовувати</a>
+            <div class="footer-nav">
+                <div class="product">
+                    <h4>Продукт</h4>
+                    <div class="quality">
+                        <a href="#" class="text">Функції</a>
+                        <a href="#" class="text">Переваги</a>
+                        <a href="#" class="text">Як використовувати</a>
+                    </div>
                 </div>
+                <h4 class="feedback">Зворотній зв'язок</h4>
+                <h4 class="privacy-policy">Політика конфіденційності</h4>
             </div>
-            <h4 class="feedback">Зворотній зв'язок</h4>
-            <h4 class="privacy-policy">Політика конфіденційності</h4>
         </div>
     </footer>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
