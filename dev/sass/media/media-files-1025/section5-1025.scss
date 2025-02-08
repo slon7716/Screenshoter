@@ -1,47 +1,52 @@
-@use 'sass/variables' as *;
-
 .section-5 {
    margin: 0 0 60px;
 
    .container {
       flex-direction: column;
+      gap: 136px;
+      overflow: initial;
    }
 
    .left-part {
-      padding-right: 0;
-
-      img {
+      .roundcube-white {
          width: 122px;
          height: 140px;
+         margin-left: 66px;
       }
 
       .small-gif {
          display: none;
       }
-
-      .block-blur {
-         max-width: 723px;
-         height: 482px;
-         border-radius: 35px;
-         margin-top: -65px;
-      }
       
       .gif {
-         margin: -374px 104px 0;
+         margin: 16px 104px 0;
+
+         .opaque-glass {
+            max-width: 412px;
+            font-size: 0.875rem;
+            padding: 30px 50px;
+            top: 294px;
+         }
       }
 
-      .opague-glass {
-         max-width: 412px;
-         height: 156px;
-         font-size: 0.875rem;
-         padding: 30px 50px;
-         margin: -21px 0 0 175px;
+      .block-blur {
+         max-width: 94%;
+         height: 482px;
+         border-radius: 70px;
+         margin-top: -398px;
       }
    }
 
    .info-about {
-      height: 100px;
-      gap: 48px;
+      height: auto;
       margin: 0;
+   }
+   
+   @media (max-width: 767.9px) {
+      .left-part {
+         .opaque-glass {
+            margin: -21px auto 0;
+         }
+      }
    }
 }

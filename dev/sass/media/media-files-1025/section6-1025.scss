@@ -1,37 +1,44 @@
-@use 'sass/variables' as *;
-
 .section-6 {
-   margin-bottom: 150px;
-   
+   margin: 0 0 150px;
+
    .main {
       flex-direction: column;
+      gap: 60px;
    }
-   
+
    .info-about {
       order: 2;
-      height: 152px;
-      margin-top: 60px;
+      height: auto;
+      margin-top: 0;
    }
-   
+
    .right-part {
-      .gradient-block {
-         max-width: 494px;
-         height: 396px;
-         top: 61px;
+      .supertoroid-purple {
+         width: 168px;
+         height: 168px;
+         right: 130px;
       }
 
       .gif {
-         margin: 122px 104px 0;
+         margin: 145px 104px 0;
       }
 
-      .supertoroid-purple {
-         width: 123px;
-         height: 123px;
-         right: 174px;
+      .block-blur {
+         max-width: 64%;
+         height: 396px;
+         top: 84px;
       }
    }
 
    .line-3 {
+      max-height: 436px;
       bottom: -170px;
+   }
+
+   @media (max-width: 767.9px) {
+      .line-3 {
+         max-height: 325px;
+         bottom: -160px;
+      }
    }
 }

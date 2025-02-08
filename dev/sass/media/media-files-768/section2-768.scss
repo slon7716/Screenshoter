@@ -1,0 +1,25 @@
+.section-2 {
+   .container {
+      padding: 0 15px;
+   }
+
+   .info-about {
+      flex-direction: column;
+      height: 188px;
+      gap: 20px;
+      text-align: center;
+      justify-content: flex-start;
+      align-items: center;
+   }
+
+   .plates {
+      .plate {
+         height: 92px;
+         padding: 0 26px 0 50px;
+      }
+   }
+
+   @media (max-width: 575.9px) {
+      margin-bottom: 29px;
+   }
+}

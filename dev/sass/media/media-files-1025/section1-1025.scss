@@ -1,12 +1,10 @@
-@use 'sass/variables' as *;
-
 .section-1 {
    border: none;
    margin: 20px 0 150px;
 
    .screenshot {
       .info-about-site {
-         max-width: 263px;
+         max-width: 258px;
          
          .white {
             display: none;
@@ -16,7 +14,7 @@
             margin-bottom: 40px;
    
             img {
-               width: 104px;
+               width: 95px;
                height: 30px;
                top: 56px;
                left: -3px;
@@ -24,7 +22,6 @@
          }
       
          .small-text {
-            width: auto;
             margin-bottom: 30px;
          }
    
@@ -51,8 +48,8 @@
          margin: 0 -98px 0 0;
    
          .screen {
-            max-width: 368px;
-            height: 216px;
+            max-width: 383px;
+            height: auto;
          }
    
          .opaque-glass {

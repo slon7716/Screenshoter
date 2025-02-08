@@ -1,0 +1,20 @@
+footer {
+   .container {
+       padding: 30px 15px;
+   }
+   
+   .footer-nav {
+      flex-wrap: wrap;
+      gap: 0;
+
+      .product {
+         h4 {
+            margin-bottom: 25px;
+         }
+      }
+
+      .feedback {
+         margin-right: 34px;
+      }
+   }
+}

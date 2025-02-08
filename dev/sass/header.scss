@@ -54,7 +54,7 @@ header {
                line-height: 24px;
 					font-size: 1rem;
 					font-weight: 500;
-					color: $dark-color;
+					color: #565656;
 					border: none;
 					margin-left: -20px;
 
@@ -73,6 +73,7 @@ header {
 						.option {
 							font-size: 0.875rem;
 							font-weight: 400;
+							color: #56565680;
 							line-height: 33px;
 							min-height: 33px;
 							padding: 0 28px;
@@ -97,7 +98,7 @@ header {
 							&.selected,
 							.focus {
 								background-color: #fff;
-								color: #56565680;
+								color: $dark-color;
 							}
 
 							&:hover {

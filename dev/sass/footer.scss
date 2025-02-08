@@ -1,7 +1,4 @@
-@use 'sass/variables' as*;
-
 footer {
-    height: 296px;
     background-color: #f5f5f5;
     margin-top: auto;
     
@@ -9,8 +6,7 @@ footer {
         max-width: 1440px;
         display: flex;
         justify-content: space-between;
-        gap: 24px;
-        padding: 60px 60px 0;
+        padding: 60px 60px;
     }
 
     .logo {
@@ -29,10 +25,13 @@ footer {
 
         h4 {
             max-width: 178px;
-            margin-bottom: 26px;
         }
 
         .product {
+            h4 {
+                margin-bottom: 26px;
+            }
+
             .quality {
                 display: flex;
                 flex-direction: column;
@@ -42,6 +41,38 @@ footer {
                     white-space: nowrap;
                 }
             }
+        }
+    }
+
+    @media (max-width: 1024.9px) {
+        .container {
+            padding: 50px 45px;
+        }
+
+        .logo {
+            img {
+                width: 180px;
+                height: 28px;
+            }
+        }
+    }
+
+    @media (max-width: 767.9px) {
+        .container {
+           flex-direction: column;
+           gap: 41px;
+        }
+    
+        .footer-nav {
+           h4 {
+            max-width: 160px;
+        }
+        
+        .product {
+            h4 {
+                margin-bottom: 45px;
+            }
+           }
         }
     }
 }

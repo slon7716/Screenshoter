@@ -13,22 +13,22 @@
       height: 483px;
       position: absolute;
       top: -278px;
+      z-index: -1;
    }
 
    .small-container {
       max-width: 1682px;
       display: flex;
       justify-content: space-between;
-      gap: 48px;
+      gap: 45px;
    }
    
-   
    .cone {
-      width: 170px;
+      width: 171px;
       height: 176px;
       position: absolute;
-      left: 25%;
-      bottom: 137px;
+      left: 22%;
+      top: 9px;
    }
    
    .opaque-glass {
@@ -61,6 +61,10 @@
          font-weight: 400;
          line-height: 1.4;
          margin-bottom: 60px;
+
+         span {
+            white-space: nowrap;
+         }
       }
 
       .now {
@@ -76,6 +80,13 @@
 
       .download {
          display: none;
+      }
+   }
+
+   @media (max-width: 1024.9px) {
+      h2 {
+         font-size: 1.5rem;
+         padding-top: 28px;
       }
    }
 }

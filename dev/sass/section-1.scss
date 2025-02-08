@@ -14,11 +14,11 @@
       width: 100%;
       max-width: 1700px;
       display: flex;
-      gap: 267px;
+      gap: 250px;
       overflow: hidden;
 
       .info-about-site {
-         max-width: 464px;
+         max-width: 476px;
          padding-left: 48px;
          margin-top: auto;
          margin-right: auto;
@@ -38,19 +38,19 @@
    
             span {
                color: $primary-color;
+               white-space: nowrap;
             }
    
             img {
-               width: 212px;
+               width: 192px;
                height: 57px;
                position: absolute;
-               top: 118px;
+               top: 114px;
                left: -8px;
             }
          }
       
          .small-text {
-            width: 438px;
             margin-bottom: 55px;
          }
    
@@ -64,6 +64,7 @@
             border: none;
             padding: 23px;
             margin-bottom: 126px;
+            cursor: pointer;
          }
    
          .arrow-down {
@@ -78,13 +79,14 @@
          max-width: 800px;
          background: linear-gradient(to bottom, #7421B0 0%, #D08EFF 100%);
          border-radius: 70px;
-         padding: 88px 0 97px;
+         padding: 88px 0 124px;
          margin: 162px -98px 0 0;
    
          .screen {
-            width: 100%;
             max-width: 848px;
-            margin-left: -30.4%;
+            height: 100%;
+            max-height: 477px;
+            margin-left: -30%;
             position: relative;
             z-index: 1;
          }
@@ -105,5 +107,6 @@
       height: 968px;
       position: absolute;
       top: 150px;
+      z-index: -1;
    }
 }

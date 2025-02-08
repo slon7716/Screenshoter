@@ -6,16 +6,17 @@
    .container {
       display: flex;
       gap: 54px;
+      overflow: hidden;
    }
 
    .left-part {
-      max-width: 1042px;
       flex: 1;
       position: relative;
 
-      img {
+      .roundcube-white {
          width: 202px;
          height: 299px;
+         margin-left: -48px;
       }
 
       .small-gif {
@@ -23,8 +24,8 @@
          height: 59px;
          padding-top: 31px;
          position: absolute;
-         left: 150px;
-         top: 24px;
+         left: 112px;
+         top: 50px;
          z-index: 1;
 
          .gif-small {
@@ -44,30 +45,33 @@
             margin-left: 20px;
          }
       }
-
+      
+      .gif {
+         margin: 23px 4% 0 17%;
+         @include gif;
+         
+         .opaque-glass {
+            max-width: 461px;
+            padding: 30px 40px;
+            margin: 0 10px;
+            @include opaque-glass;
+            color: $secondary-color;
+            border-radius: 16px;
+            position: absolute;
+            top: 360px;
+            
+            span {
+               color: $basic-color;
+            }
+         }
+      }
+      
+      
       .block-blur {
          max-width: 1042px;
          height: 811px;
-         margin-top: -140px;
+         margin-top: -565px;
          @include block-blur;
-      }
-      
-      .gif {
-         margin: -648px 5% 0 23%;
-         @include gif;
-      }
-
-      .opague-glass {
-         max-width: 461px;
-         padding: 30px 40px;
-         margin: -37px 9% 0 34%;
-         @include opaque-glass;
-         color: $secondary-color;
-         border-radius: 16px;
-         
-         span {
-            color: $basic-color;
-         }
       }
    }
 

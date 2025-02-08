@@ -23,10 +23,13 @@ body {
 }
 
 a {
+   color: $basic-color;
+   cursor: pointer;
    text-decoration: none; /* Убирает подчеркивание */
+   border: none;
 
    &:hover {
-      color: $basic-color;
+      color: $primary-color;
    }
 }
 
@@ -84,12 +87,11 @@ img,
 
 .container {
    width: 100%;
-   max-width: 1920px;
    margin: 0 auto;
 }
 
 .custom-spacing {
-   height: 32px;
+   height: 26px;
 }
 
 .download {
@@ -102,4 +104,12 @@ img,
    border: none;
    padding: 23px;
    margin: 0 auto;
+}
+
+::-webkit-scrollbar-thumb {
+   background: $purple-color;
+}
+
+::-webkit-scrollbar-track {
+   background: $purple-light-color;
 }

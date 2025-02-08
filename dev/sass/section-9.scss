@@ -4,10 +4,10 @@
    margin-bottom: 200px;
    
    .container {
-      max-width: 1441px;
+      max-width: 1442px;
    }
    .cube-and-glass {
-      margin-left: 125px;
+      margin: 0 0 34px 125px;
 
       .cube {
          width: 59px;
@@ -18,10 +18,8 @@
       .opaque-glass {
          max-width: 228px;
          padding: 8px 24px;
-         margin-bottom: 34px;
          @include opaque-glass;
          color: $secondary-color;
-         background-color: #C4C4C433;
       }
    }
 
@@ -52,11 +50,7 @@
       
       .plate {
          height: 349px;
-         padding: 40px;
-
-         img {
-            margin-bottom: 30px;
-         }
+         padding: 50px 45px;
 
          &:hover {
             .star {

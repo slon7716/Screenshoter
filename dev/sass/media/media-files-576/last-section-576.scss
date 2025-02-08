@@ -1,0 +1,42 @@
+.last-section {
+   margin-bottom: 60px;
+   
+   .line-5 {
+      height: 131px;
+      top: -40px;
+   }
+
+   .small-container {
+      gap: 59px;
+   }
+   
+   .cone {
+      left: 22%;
+      top: 0;
+   }
+   
+   .opaque-glass {
+      max-width: 100%;
+      border-radius: 0;
+      margin-right: 0;
+
+      .save {
+         width: 114px;
+         height: 114px;
+         right: 83px;
+         bottom: -14px;
+      }
+   }
+
+   .right-part {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 0 15px;
+
+      h2 {
+         height: auto;
+         font-size: 1.125rem;
+      }
+   }
+}

@@ -6,39 +6,42 @@
    }
 
    .cube-and-glass {
-      margin-left: 0;
+      margin: 0 0 44px 0;
 
       .cube {
          width: 53px;
          height: 59px;
-         margin: 0 0 -30px 127px;
+         margin: 0 0 -31px 127px;
       }
    
       .opaque-glass {
-         max-width: 228px;
-         padding: 8px 24px;
-         margin-bottom: 44px;
+         max-width: 206px;
+         font-size: 0.75rem;
+         padding: 11px 35px;
       }
    }
 
    .title-and-text {
-      height: 96px;
-      gap: 80px;
+      max-width: 678px;
+      height: auto;
+      justify-content: space-between;
+      gap: 20px;
       padding: 0;
       margin-bottom: 60px;
 
       h2 {
-         max-width: 240px;
+         max-width: 295px;
       }
 
       .small-text {
-         max-width: 308px;
+         max-width: 304px;
       }
    }
 
    .plates {
       .plate {
          height: 294px;
+         padding: 60px;
       }
    }
 }

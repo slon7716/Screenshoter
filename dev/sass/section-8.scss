@@ -38,7 +38,7 @@
       background: $purple-light-color;
       border-radius: 70px;
       box-shadow: inset 0 0 0 4px #ffffff1f;
-      backdrop-filter: blur(12px);
+      backdrop-filter: blur(8px);
       padding: 100px 9.5% 61px;
 
       h2 {
@@ -58,9 +58,15 @@
          justify-content: space-between;
          gap: 24px;
          margin-bottom: 200px;
-         
+
          .function {
             max-width: 398px;
+            flex: 36%;
+                        
+            &:last-child {
+               max-width: 377px;
+               flex: 28%;
+            }
             
             img {
                width: 111px;
@@ -88,12 +94,8 @@
                }
                
                .title {
-                  max-width: 155px;
+                  max-width: 116px;
                }
-            }
-   
-            .text {
-               height: 312px;
             }
          }
       }

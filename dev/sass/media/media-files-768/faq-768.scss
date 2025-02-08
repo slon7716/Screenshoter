@@ -1,0 +1,53 @@
+.faq {
+   margin-bottom: 60px;
+   
+   .accordion {
+      padding: 0 15px 40px;
+
+      &-item {
+         &__button {
+            height: auto;
+            padding: 30px 60px 30px 40px;
+            flex-direction: column;
+            align-items: start;
+
+            &::after {
+               right: 35px;
+               top: 35px;
+            }
+
+            span {
+               margin: 0 0 20px;
+            }
+         }
+   
+         &__content {
+            font-size: 0.75rem;
+            padding: 0 27px 30px 40px;
+         }
+
+         &.active {
+            .accordion-item__content {
+               margin-top: -10px;
+            }
+         }
+      }
+   }
+
+   .cone {
+      top: 294px;
+      left: -40px;
+   }
+   
+   .cylinder {
+      top: 592px;
+      left: calc(50% - 97px);
+   }
+
+   .ball {
+      width: 106px;
+      height: 106px;
+      right: 20px;
+      bottom: 185px;
+   }
+}

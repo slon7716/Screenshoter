@@ -1,0 +1,17 @@
+header {
+   .container {
+      padding: 0 6px 0 15px;
+
+      .mobile-container {
+         .header-nav {
+            .nav-list {
+               gap: 10px;
+   
+               .nav-item {
+                  font-size: 0.875rem;
+               }
+            }
+         }
+      }
+   }
+}
